@@ -252,6 +252,33 @@ The available *options* are:
 * *datalist* - an iterable of suggested values.
 * *disabled* - whether input is disabled; defaults to false.
 
+<a name="Textarea" href="#Textarea">#</a> <b>Textarea</b>(<i>options</i>) · [Source](./src/textarea.js)
+
+<img src="./img/textarea.png" alt="A Textarea asking to type a biography" width="640">
+
+```js
+viewof name = Textarea({label: "Bio", placeholder: "Tell us about your life…"})
+```
+
+A Textarea allows to input a long text, with possibly several paragraphs. By default, a Textarea will report its value immediately on input. If more deliberate behavior is desired, the *submit* option can be set to true to wait until a button is clicked.
+
+The available *options* are:
+
+* *label* - a label; either a string or an HTML element.
+* *value* - the initial value; defaults to the empty string.
+* *placeholder* - the [placeholder](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/placeholder) attribute.
+* *spellcheck* - whether to activate the browser’s spell-checker.
+* *minlength* - [minimum length](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/minlength) attribute.
+* *maxlength* - [maximum length](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/maxlength) attribute.
+* *width* - the width of the input (not including the label).
+* *cols* - the number of columns of text (will set the width if not present).
+* *rows* - the number of rows of text.
+* *submit* - whether to require explicit submission before updating; defaults to false.
+* *resize* - whether input is resizable; defaults to true.
+* *readonly* - whether input is readonly; defaults to false.
+* *disabled* - whether input is disabled; defaults to false.
+* *fontFamily* - the font family (e.g. "monospace"); defaults to inherit.
+
 ## Utilities
 
 <a name="Input" href="#Input">#</a> <b>Input</b>(<i>value</i>) · [Source](./src/input.js)
